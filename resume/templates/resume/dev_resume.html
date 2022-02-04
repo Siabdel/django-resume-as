@@ -1,0 +1,230 @@
+{% extends "base_dev.html" %}
+{% load static %}
+{% load  i18n  %}
+
+{% block content %}
+
+<div class="main-wrapper">
+  <div class="container px-3 px-lg-5">
+    <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+      <div class="resume-header">
+        <div class="row align-items-center">
+          <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+            <h2 class="resume-name mb-0 text-uppercase">
+                {{ pinfo.last_name }} 
+                {{ pinfo.first_name }}</h2>
+            <div class="resume-tagline mb-3 mb-md-0"> {{ pinfo.title }} </div>
+          </div>
+          <!--//resume-title-->
+          <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link"
+                  href="tel:#"> {{ pinfo.phone }} </a></li>
+              <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link"
+                  href="mailto:#"> {{ pinfo.email }} </a></li>
+              <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link"
+                  href="#"> www.atlassoft.fr </a></li>
+              <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Lyon</li>
+            </ul>
+          </div>
+          <!--//resume-contact-->
+        </div>
+        <!--//row-->
+
+      </div>
+      <!--//resume-header-->
+      <hr>
+      <div class="resume-intro py-3">
+        <div class="media flex-column flex-md-row align-items-center">
+          <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto"
+            src="{% static 'devresume/images/profile.png' %}" alt="image">
+          <div class="media-body text-left">
+            <p class="mb-0">   {{ overview.text}} </p>
+          </div>
+          <!--//media-body-->
+        </div>
+      </div>
+      <!--//resume-intro-->
+      <hr>
+      <div class="resume-body">
+        <div class="row">
+          <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+            <section class="work-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+            
+              <!--//item-->
+              {% for job in job_list %}
+                <div class="item mb-3">
+                  <div class="item-heading row align-items-center mb-2">
+                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                      {{ job.title|capfirst }} 
+                    </h4>
+                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
+                     <div class="col-md-10">{{ job.company }} |  {{ job.location }}</div>
+                     <div class="col-md-10">{{ job.formatted_start_date }} - {{ job.formatted_end_date }}</div>
+                    </div>
+
+                  </div>
+                  <div class="item-content">
+                    <small>Missions accomplies.</small>
+                    
+                    <ul class="resume-list">
+                      {% for acc in job.jobaccomplishment_set.all %}
+                        {% if acc.order < 99 %}
+                          <li> {{ acc.description }} </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                    <hr>
+                    <small>Environnement Téchnique:</small>
+                    <ul class="resume-list">
+                      {% for acc in job.jobaccomplishment_set.all %}
+                      {% if acc.order == 99 %} 
+                        <li> {{ acc.description }} </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endfor %}
+
+            </section>
+            <!--//work-section-->
+
+
+            <section class="project-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Projects</h3>
+              
+              {% for proj in projects %}
+              <!--//item-->
+              <div class="item">
+                <div class="item-heading row align-items-center mb-2">
+                  <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ proj.name }} </h4>
+                  <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
+                   Open sources </div>
+
+                </div>
+                <div class="item-content">
+                  <p>{{ proj.short_description|safe }}</p>
+
+                </div>
+              </div>
+              {% endfor %}
+            
+              <!--//item-->
+            </section>
+            <!--//project-section-->
+          </div>
+          <!--//resume-main-->
+          <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+            <section class="skills-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4"> {% trans 'Skills' %}</h3>
+              <div class="item">
+                <h4 class="item-title">Technical</h4>
+                <ul class="list-unstyled resume-skills-list">
+                 
+                  {% for skill in skills %}
+                    <li class="mb-2">{{ skill }}</li>
+                     
+                  {% endfor %}
+                </ul>
+
+              </div>
+              <!--//item-->
+              <div class="item">
+                <h4 class="item-title">Professional</h4>
+                <ul class="list-unstyled resume-skills-list">
+                  <li class="mb-2">Communication efficace</li>
+                  <li class="mb-2">Joueur d'équipe   <li>
+                  <li class="mb-2">Force de propostions</li>
+                  <li>Résolveur de problèmes puissant</li>
+                </ul>
+              </div>
+              <!--//item-->
+            </section>
+            <!--//skills-section-->
+            <section class="education-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Formation</h3>
+              <ul class="list-unstyled resume-education-list">
+                {% for edu in educations %}
+                  <li class="mb-3">
+                    <div class="resume-degree font-weight-bold">{{ edu.name|safe }} </div>
+                    <div class="resume-degree-org text-muted"> {{ edu.location }}</div>
+                    <div class="resume-degree-time text-muted">
+                      {{ edu.formatted_start_date }} - 
+                      {{ edu.formatted_end_date }}</div>
+                  </li>
+                {% endfor %}
+                
+              </ul>
+            </section>
+            <!--//education-section-->
+            <section class="education-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Certifications</h3>
+              <ul class="list-unstyled resume-awards-list">
+                {% for formation in formations %}
+                  <li class="mb-3">
+                    <div class="font-weight-bold">{{ formation.name|safe }}</div>
+                    <div class="text-muted">{{ formation.location }}</div>
+                  </li>
+                {% endfor %}
+               
+              </ul>
+            </section>
+            <!--//education-section-->
+            <section class="skills-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+              <ul class="list-unstyled resume-lang-list">
+                {% for lang in pinfo.language.all %}
+                  <li class="mb-2"> {{ lang.name }} <span class="text-muted">(Native)</span></li>
+                {% endfor %}
+              </ul>
+            </section>
+            <!--//certificates-section-->
+            <section class="skills-section py-3">
+              <h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
+              <ul class="list-unstyled resume-interests-list mb-0">
+                <li class="mb-2">Foot</li>
+                <li class="mb-2">Music</li>
+                <li class="mb-2">Astronomie</li>
+                <li>Voyage</li>
+              </ul>
+            </section>
+            <!--//certificates-section-->
+
+          </aside>
+          <!--//resume-aside-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//resume-body-->
+      <hr>
+      <div class="resume-footer text-center">
+        <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+          <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#"><i
+                class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span
+                class="d-none d-lg-inline-block text-muted">github.com/siabdel</span></a></li>
+          <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#"><i
+                class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span
+                class="d-none d-lg-inline-block text-muted">linkedin.com/in/siabdel58</span></a></li>
+          <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="#"><i
+                class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span
+                class="d-none d-lg-inline-block text-muted">@siabdel</span></a></li>
+        </ul>
+      </div>
+      <!--//resume-footer-->
+    </article>
+
+  </div>
+  <!--//container-->
+
+  <footer class="footer text-center py-4">
+    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+    <small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link"
+        href="http://themes.3rdwavemedia.com" target="_blank">Atlasoft </a> & Atlas RDV</small>
+  </footer>
+
+</div>
+<!--//main-wrapper-->
+{% endblock %}

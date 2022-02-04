@@ -1,0 +1,79 @@
+{% extends "resume/base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+
+    {% block title_block %}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="{%  static "css/formpart.css" %}" rel="stylesheet">
+          <style>
+          .delete-form-row{
+              background-image: url("{% static "images/remove.png" %}");
+          }
+
+          </style>
+    {% endblock %}
+
+
+<div class="whole_page">
+    <div class="center_page">
+
+      <div class="left-side-1">
+       <h2>EDUCATION</h2>
+       <p>Step {{wizard.steps.step1}} of {{ wizard.steps.count }}</p>
+      </div>
+
+      <div class="left-side">
+        <form method="POST" class="method_form_1">
+          {% csrf_token %}
+        {{ wizard.management_form }}
+        {% if wizard.form %}
+            {{ wizard.form.management_form }}
+             {% for form in wizard.form.forms %}
+            <div class="formation-list">
+              <div class="form-row-local">
+                <div class="left-view">
+                  {{ form.name}}
+                  {{ form.location }}
+                  {{ form.language }}
+                  <div class="form-row" >
+                    <div class="col" id="year">
+                      {{ form.start_date }}
+                    </div>
+                    <div class="col" id="year">
+                        {{ form.end_date }}
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <button class="delete-form-row" id="del-button" onclick="supprimer_ligne(event, 'step2')">X</button>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+            <div class="formation-list-plus">
+            </div>
+
+        {% else %}
+          {{ wizard.form }}
+      {% endif %}
+          <div class="input-group">
+            <button class="add-form-row btn btn-primary btn-lg add-class-4" onclick="dupliquer(event, 'step2')">+</button>
+          </div>
+      {% if wizard.steps.prev %}
+      <button name="wizard_goto_step" type="submit" class="step-btn" value="{{ wizard.steps.prev }}">{% trans "Prev" %}</button>
+      {% endif %}
+      <input type="submit"  class="next-btn next2-pos" value="{% trans "Next" %}"/>
+      </form>
+      </div>
+
+    </div>
+</div>
+
+<script src="{% static "js/cv_script.js" %}"></script>
+
+{% endblock %}

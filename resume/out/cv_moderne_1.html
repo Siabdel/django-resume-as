@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900'" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet">
+    <!-- Font Awesome JS -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+    <title>Resume</title>
+
+    <style type="text/css">
+
+
+   @page {
+     size: letter landscape;
+     border: 1px solid #999999;
+     margin: .4cm;
+   }
+
+   @font-face {
+     font-family: 'OpenSansRegular';
+     font-size: 14px;
+     src: url("/static/fonts/OpenSans/OpenSans-Regular.ttf");
+   }
+
+   .container {
+     padding: .4cm;
+   }
+
+
+   </style>
+
+    <!--Modals project-->
+    <script>
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    function openModal(img,event) {
+      var modal = img.querySelector('.modal');
+      var modalImg = modal.querySelector(".modal-content")
+      var captionText = img.querySelector(".caption");
+      if ((event.target.className=="thumb") || (event.target.className.includes('fa-external-link'))) {
+        modal.style.display = "block";
+        modalImg.src = img.style.backgroundImage.split('\"')[1];
+        captionText.innerHTML = img.getAttribute('title');
+        modal.style.zIndex=1;
+      } else if ((event.target.className=="close")||(event.target.className=="modal")) {
+        modal.style.display = "none";
+        modal.style.zIndex="";
+      }
+    }
+    </script>
+    <!-- endcompress -->
+
+  </head>
+
+  <body id="page-top">
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Resume</span> ****
+    
+      
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/media/static/resume/img/profile.jpg" alt="Pas de photo /media/static/resume/img/profile.jpg">
+    </span>
+    
+    
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#about">About </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#achievements"><div>Projects</div></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#other"><div>Other</div></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+
+<div class="container-fluid p-0">
+  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+    <!-- particles -->
+    <div id="particles-js">
+      <div class="my-auto">
+        <h1 class="mb-0">Alessandro 
+          <span class="primary">Marin</span><span style="text-transform: none;">, PhD</span>
+        </h1>
+        <div class="subheading mb-5">Support Specialist - Business Intelligence and Analytics
+          
+          
+          
+        </div>
+        
+        <p class="mb-5">Qualified by 4 years as Support Specialist and 7 years of doctoral and post-doctoral academic experience 
+  in biophysics and solar energy research. Expertise in programming, data acquisition and data analysis, including machine learning and modeling. <br>
+I am interested in leveraging my skills for a role in development and data analysis.</p>
+        
+
+        <ul class="list-inline list-social-icons mb-0">
+          
+          <li class="list-inline-item">
+            <a href="mailto:AlessandroMarin80@gmail.com" target="_blank" title="Send me an email">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item" target="_blank">
+            <a href="https://aless80.pythonanywhere.com/resume" target="_blank" title="My site at: https://aless80.pythonanywhere.com/resume">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/alessandromarin80/" target="_blank" title="Go to my linkedin account">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/aless80" target="_blank" title="Go to my github account">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+          <li class="list-inline-item">
+            <a href="/media/static/resume/img/Alessandro_Marin_PhD_CV_kdNYTYy.pdf" target="_blank" title="Download CV in PDF">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+    <div class="my-auto">
+      <h2 class="mb-5">Experience</h2>
+      
+      <h3 class="mb-0">Support Specialist - Business Intelligence and Analytics</h3>
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            
+            <a target="_blank" href="https://www.intersystems.com/">InterSystems Co.</a>
+            
+          </div>
+          
+          <p>Provide technical support for InterSystems’ Business Intelligence platform <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=D2GS_ch_intro" target="_block">DeepSee<a></p>
+          <ul class="fa-ul mb-0">
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Solve customer issues and requests (400+ till date), coordinate with clients and developers on any proposed changes
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Development of applications using HTML, Javascript, ObjectScript, SQL, MDX
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Develop and improve analytical models, architecture, software performance, and dashboards for Business Intelligence
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Join client meetings to troubleshoot issues and coordinate project development
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Consistently receive 10/10's in customer experience scores
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="resume-date text-md-right">
+          <div class="subheading mb-3 text-primary">May 2014 - Present</div>
+          <p >Cambridge, MA</p>
+        </div>
+      </div>
+      
+      <h3 class="mb-0">Software Developer - Contract position</h3>
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            
+            <a target="_blank" href="https://www.mn.uio.no/fysikk/english/">University of Oslo</a>
+            
+          </div>
+          
+          <p>Develop an extension for UiO's educational platforms</p>
+          <ul class="fa-ul mb-0">
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Full stack development of a plugin for Canvas LMS using the LTI standard
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="resume-date text-md-right">
+          <div class="subheading mb-3 text-primary">Dec 2018 - Present</div>
+          <p >Oslo, Norway</p>
+        </div>
+      </div>
+      
+      <h3 class="mb-0">Postdoctoral Scientist</h3>
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            
+            <a target="_blank" href="https://www.tudelft.nl/en/">Delft University of Technology</a>
+            
+          </div>
+          
+          <p>Investigated the molecular electronic processes in organic semiconductors by modeling spectroscopic data</p>
+          <ul class="fa-ul mb-0">
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Developed a nonlinear superposition model in MATLAB to extract charge yields from spectroscopic data
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Implemented software using queues and event-driven programming in LabVIEW for laser systems
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="resume-date text-md-right">
+          <div class="subheading mb-3 text-primary">Sep 2011 - Jun 2013</div>
+          <p >Delft, the Netherlands</p>
+        </div>
+      </div>
+      
+      <h3 class="mb-0">Ph.D. in Biophysics of Photosynthesis</h3>
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            
+            <a target="_blank" href="https://www.nat.vu.nl/en/research/biophysics/index.aspx">Vrije Universiteit</a>
+            
+          </div>
+          
+          <p>Researched the transport of light energy in plant and algal photosynthesis</p>
+          <ul class="fa-ul mb-0">
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Developed MATLAB software for data processing, performed model-based
+analysis of spectroscopic data on high performance servers
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Co-developer of the C (LabWindows) software for a laser detector. Set up
+real-time instrument control and digital data processing at high-repetition rates
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Published 6 peer-reviewed publications (4 first author) in academic journals
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="resume-date text-md-right">
+          <div class="subheading mb-3 text-primary">Apr 2006 - Jun 2011</div>
+          <p >Amsterdam,<br>the Netherlands</p>
+        </div>
+      </div>
+      
+      <h3 class="mb-0">Master Thesis in Hearing Research</h3>
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            
+            <a target="_blank" href="https://ki.se/en/neuro/ulfendahl-laboratory">Karolinska Institute</a>
+            
+          </div>
+          
+          <p>Researched cochlear mechanics</p>
+          <ul class="fa-ul mb-0">
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Preprocessed movies of the cochlea with wavelet denoising and deconvolution
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Invented and developed a MATLAB algorithm that uses optical flow to couple a simulation of cochlear movement 
+  with microscopic movies
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Published a peer reviewed publication in an academic journal
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="resume-date text-md-right">
+          <div class="subheading mb-3 text-primary">Aug 2004 - Jun 2005</div>
+          <p >Stockholm, Sweden</p>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+    <div class="my-auto">
+      <h2 class="mb-5">Education</h2>
+      
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            <h3 class="mb-0">PhD in Biophysics of Photosynthesis</h3>
+          </div>
+          <p>
+            
+            <a href="https://www.nat.vu.nl/en/research/biophysics/index.aspx" target="_blank">Vrije Universiteit</a>
+            
+          </p>
+          <p>
+            
+          </p>
+          <p>Full time research in biophysics of photosynthesis on the EU funded project Harvest</p>
+        </div>
+        <div class="resume-date text-md-right mb-0">
+          <div class="subheading mb-3 text-primary">Apr 2005 - Jun 2012</div>
+          <p>Amsterdam, the Netherlands</p>
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            <h3 class="mb-0">BSc in Physics, MSc in Applied Physics</h3>
+          </div>
+          <p>
+            
+            <a href="http://www.unipd.it/en/" target="_blank">University of Padova</a>
+            
+          </p>
+          <p>
+            
+            <a href="https://ki.se/en/neuro/ulfendahl-laboratory" target="_blank">Karolinska Institute</a>
+            
+          </p>
+          <p>Bachelor and Master in Physics at University of Padova.  <br>
+  
+  Master thesis in Biophysics of the cochlea at Karolinska Institutet</p>
+        </div>
+        <div class="resume-date text-md-right mb-0">
+          <div class="subheading mb-3 text-primary">Sep 1999 - Nov 2005</div>
+          <p>Padova, Italy</p>
+          <p>Stockholm, Sweden</p>
+        </div>
+      </div>
+      
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <div class="subheading mb-3">
+            <h3 class="mb-0">Bachelor of Music, Piano</h3>
+          </div>
+          <p>
+            
+            <a href="http://www.conservatoriovenezia.net/" target="_blank">Conservatory of Music Benedetto Marcello</a>
+            
+          </p>
+          <p>
+            
+          </p>
+          <p>3 years piano, 1 year composition</p>
+        </div>
+        <div class="resume-date text-md-right mb-0">
+          <div class="subheading mb-3 text-primary">Sep 2001 - Jun 2004</div>
+          <p>Venice, Italy</p>
+          <p></p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+    <div class="my-auto">
+      <h2 class="mb-5">Skills</h2>
+      <!-- for education there is this:
+      <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <div class="subheading mb-3">
+              <h3 class="mb-0"></h3>
+            -->
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Programming Languages &amp; Tools</h3>
+      </div>
+      <ul>
+        
+        <li>
+          <p>
+            <strong>Back end</strong>:
+            
+            <span title=Used in the past>C</span>,
+            
+            <span title=Proficient>Caché ObjectScript</span>,
+            
+            <span title=Daily use>Django</span>,
+            
+            <span title=>Java</span>,
+            
+            <span title=>LabVIEW</span>,
+            
+            <span title=>LabWindows/CVI</span>,
+            
+            <span title=Daily use until 2013>MATLAB</span>,
+            
+            <span title=Proficient>Python</span>,
+            
+            <span title=>REST</span>,
+            
+            <span title=>SQL</span>,
+            
+            <span title=>ShellScript (Bash)</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Software development</strong>:
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Website development</strong>:
+            
+            <span title=>Angular</span>,
+            
+            <span title=>NodeJS</span>,
+            
+            <span title=>TypeScript</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Data analysis</strong>:
+            
+            <span title=>MDX</span>,
+            
+            <span title=>Python</span>,
+            
+            <span title=>R</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Front-end</strong>:
+            
+            <span title=>Bootstrap</span>,
+            
+            <span title=>CSS</span>,
+            
+            <span title=>D3</span>,
+            
+            <span title=>HTML</span>,
+            
+            <span title=Intermediate>Javascript</span>,
+            
+            <span title=Refer to my DeepSee_TimeCharts project on GitHub>amCharts</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Machine learning</strong>:
+            
+            <span title=>Python (pandas, numpy, matplotlib, scikit-learn, gensim, nltk, etc)</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Databases</strong>:
+            
+            <span title=>NoSQL (MongoDB)</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Machine Learning/Other</strong>:
+            
+            <span title=>LaTeX</span>,
+            
+            <span title=>MDX</span>,
+            
+            <span title=>Python libraries (scikit learn, pandas, numpy, matplotlib, nltk, etc)</span>
+            
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <strong>Version control software</strong>:
+            
+            <span title=>Git</span>,
+            
+            <span title=>Perforce</span>
+            
+          </p>
+        </li>
+        
+      </ul>
+      <br>
+      
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Skills</h3>
+      </div>
+      <ul>
+        
+      </ul>
+      <br>
+      
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Technical Skills</h3>
+      </div>
+      <ul>
+        
+      </ul>
+      <br>
+      
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Transferable Skills</h3>
+      </div>
+      <ul>
+        
+      </ul>
+      <br>
+      
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Languages</h3>
+      </div>
+      <ul>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
+    <div class="my-auto">
+      <h2 class="mb-5">Projects</h2>
+      
+      <div class="subheading mb-3">
+          <h3 class="mb-0">Projects</h3>
+      </div>
+      <ul class="achievements">
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://aless80.github.io/#machine-learning" target="_block">Machine Learning Notebooks</a>:
+            
+            IPython notebooks for Machine Learning projects
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/DeepSeeButtons" target="_block">DeepSeeButtons</a>:
+            
+            Gather and analyze system information from InterSystems platforms
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/pypanda" target="_block">PyPanda</a>:
+            
+            Optimized a method for modeling transcriptional networks in Python
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Mezzanine-website" target="_block">Mezzanine-website</a>:
+            
+            My Django/Mezzanine-based site
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/PyPuma" target="_block">PyPuma</a>:
+            
+            Wrote a Python application of a computational biology method for miRNA network inference
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Djangoresume" target="_block">Djangoresume</a>:
+            
+            My Django-based online resume
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Install-Samples-BI" target="_block">Install-Samples-BI</a>:
+            
+            Automatically install SAMPLES in IRIS Data Platform
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/tantrix" target="_block">Tantrix</a>:
+            
+            Implementation in Python of a puzzle game
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://aless80.github.io/#intersystems" target="_block">InterSystems</a>:
+            
+            Miscellaneous projects involving InterSystems' technology
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="http://edosil.net/igrow" target="_block">iGrow</a>:
+            
+            Webapp allowing users to plot a child’s weight, length and BMI in comparison to
+reference data from the World Health Organization.
+          </li>
+        </ul>
+        
+      </ul>
+      <br>
+      
+      <div class="subheading mb-3">
+          <h3 class="mb-0">Ongoing Projects</h3>
+      </div>
+      <ul class="achievements">
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://aless80.github.io/#machine-learning" target="_block">Machine Learning Notebooks</a>:
+            
+            IPython notebooks for Machine Learning projects
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/DeepSeeButtons" target="_block">DeepSeeButtons</a>:
+            
+            Gather and analyze system information from InterSystems platforms
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/pypanda" target="_block">PyPanda</a>:
+            
+            Optimized a method for modeling transcriptional networks in Python
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Mezzanine-website" target="_block">Mezzanine-website</a>:
+            
+            My Django/Mezzanine-based site
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/PyPuma" target="_block">PyPuma</a>:
+            
+            Wrote a Python application of a computational biology method for miRNA network inference
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Djangoresume" target="_block">Djangoresume</a>:
+            
+            My Django-based online resume
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/Install-Samples-BI" target="_block">Install-Samples-BI</a>:
+            
+            Automatically install SAMPLES in IRIS Data Platform
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://github.com/aless80/tantrix" target="_block">Tantrix</a>:
+            
+            Implementation in Python of a puzzle game
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="https://aless80.github.io/#intersystems" target="_block">InterSystems</a>:
+            
+            Miscellaneous projects involving InterSystems' technology
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+            <a href="http://edosil.net/igrow" target="_block">iGrow</a>:
+            
+            Webapp allowing users to plot a child’s weight, length and BMI in comparison to
+reference data from the World Health Organization.
+          </li>
+        </ul>
+        
+      </ul>
+      <br>
+      
+
+      <div class="container mx-0 px-0 my-3">
+        <!--From https://codepen.io/thepeted/pen/ojvjbL with modal https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+        <div class="row">
+          
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="DeepSeeButtons" class="thumb" alt="DeepSeeButtons" title="Reporting routine for InterSystems&#x27; Business Intelligence product DeepSee. This project will be added to the product. This project uses InterSystems&#x27; proprietary language Caché ObjectScript, as well as HTML/CSS/JavaScript"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/DeepSeeButtons.gif);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/DeepSeeButtons">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="PyPanda" class="thumb" alt="PyPanda" title="Optimized a method for modeling transcriptional networks in Python. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/panda_topgenes.png);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/pypanda">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="Mezzanine-website" class="thumb" alt="Mezzanine-website" title="My site including online resume, and blog based on Django and the Mezzanine CMS"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/Mezzanine-website.png);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/Mezzanine-website">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="Djangoresume" class="thumb" alt="Djangoresume" title="My Django-based online resume"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/Djangoresume.png);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/Djangoresume">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="Install-Samples-BI" class="thumb" alt="Install-Samples-BI" title="Automatically install SAMPLES in IRIS Data Platform. This project uses InterSystems&#x27; proprietary language Caché ObjectScript."
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/Install-Samples-BI.png);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/Install-Samples-BI">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="Tantrix" class="thumb" alt="Tantrix" title="Implementation in Python of the Tantrix puzzle game. My first Python project. It uses TKinter for the UI"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/tantrix.gif);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="https://github.com/aless80/tantrix">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          <div class="col-sm-4 col-md-3">
+            <div id="iGrow" class="thumb" alt="iGrow" title="Webapp allowing users to plot a child’s weight, length and BMI in comparison to
+reference data from the World Health Organization. My first javascript project"
+                 onclick="openModal(this,event);" style="background-image: url(/media/static/resume/img/iGrow.png);">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="http://edosil.net/igrow">Go to</a>
+                </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="other">
+    <div class="my-auto">
+      <h2 class="mb-5">Other</h2>
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Other Achievements</h3>
+      </div>
+      <ul class="achievements">
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+              
+                <a href="https://www.youracclaim.com/badges/cb1477d0-5a97-4116-8155-39a2fc0efa76/linked_in_profile" target="_block">Oracle Certified Associate</a>:
+              
+            
+            Java SE 8 Programmer
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+              
+                <a href="https://mitxpro.mit.edu/certificates/8c1eea3404c447968295be53c177a82b" target="_block">MIT Professional Education Program</a>:
+              
+            
+            Certificate for the "Data Science: Data to Insights" online course on Data Science and Machine Learning
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+              
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_block">Online courses</a>:
+              
+            
+            Certificates (Coursera, Lynda) on programming, machine learning, and network science
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+              
+                <a href="https://community.intersystems.com/user/14041/posts" target="_block">Tech articles</a>:
+              
+            
+            My articles on Developer Community, InterSystems' online community for developers
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            
+              
+                <a href="/media/static/resume/img/kurs_bevis_B1.pdf" target="_block">Norwegian language certificate</a>:
+              
+            
+            Upper intermediate part 1 - Høyere mellomnivå del 1 (B2)
+          </li>
+        </ul>
+        
+      </ul>
+      <br>
+
+      
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Publications</h3>
+      </div>
+      <ul class="achievements">
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            <span class="strong-underlined">Marin A</span>, van Stokkum IH, Novoderezhkin VI, van Grondelle R. Excitation-induced polarization decay in the plant light-harvesting complex LHCII.
+              <span class="italic">Journal of Photochemistry and Photobiology, A: Chemistry</span>, 2012
+              
+                  2012, 234:91-99.
+              
+            <a   target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1010603012000172">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            <span class="strong-underlined">Marin A</span>, Doust AB, Scholes GD, Wilk KE, Curmi PMG, van Stokkum IHM, van Grondelle
+R. Flow of excitation energy in the cryptophyte light-harvesting antenna phycocyanin 645.
+              <span class="italic">Biophysical Journal</span>, 2011
+              
+                  2011, 101:1004-1013.
+              
+            <a   target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0006349511008423">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            Novoderezhkin VI, <span class="strong-underlined">Marin A</span>, van Grondelle R. Intra- and inter-monomeric transfers in the light harvesting LHCII complex: the Redfield-Frster picture.
+              <span class="italic">Physical Chemistry Chemical Physics</span>, 2011
+              
+                  2011, 13(38):17093-103.
+              
+            <a   target="_blank" href="http://pubs.rsc.org/en/content/articlelanding/2011/cp/c1cp21079c#!divAbstract">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            <span class="strong-underlined">Marin A</span>, Passarini F, van Stokkum IH, Croce R, van Grondelle R. Minor complexes at work: light-harvesting by Carotenoids in the Photosystem II antenna complexes CP24 and CP26
+              <span class="italic">Biophysical Journal</span>, 2011
+              
+                  2011, 100(11):2829-2838.
+              
+            <a   target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/21641329">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            Gall A, Berera R, Alexandre MTA, Pascal AA, Bordes L, Mendes-Pinto MM, Andrianambinintso
+S, Stoitchkova KV, <span class="strong-underlined">Marin A</span>, Valkunas L, Horton P, Kennis JTM, van Grondelle R, Ruban A,
+Robert B. Molecular adaptation of photoprotection: Triplet states in light-harvesting proteins
+              <span class="italic">Biophysical Journal</span>, 2011
+              
+                  2011, 101(4):934-942.
+              
+            <a   target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/21843485">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            <span class="strong-underlined">Marin A</span>, Passarini F, Croce R, van Grondelle R. The energy transfer pathways in the CP24 and CP26 antenna complexes of higher plant Photosystem II. A comparative study.
+              <span class="italic">Biophysical Journal</span>, 2010
+              
+                  2010, 99:4056-4065.
+              
+            <a   target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/21156149">Link</a>
+          </li>
+        </ul>
+        
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            Boutet de Monvel J, <span class="strong-underlined">Marin A</span>, Jacob S, Tomo I, von Tiedemann M, Fridberger A, Ulfendahl M,
+Steele CR. From cochlear kinematics to cochlear mechanics: matching model to experiments
+              <span class="italic">Otol Jpn</span>, 2007
+              
+                  2007, 16(2):76-84.
+              
+            <a   target="_blank" href="https://www.jstage.jst.go.jp/article/otoljpn1991/17/2/17_2_76/_pdf">Link</a>
+          </li>
+        </ul>
+        
+      </ul>
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <!-- Popper.JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  </body>
+
+</html>

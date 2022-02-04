@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AS">
+    <meta name="author" content="">
+    
+
+    <title>Resume</title>
+    <!--  load compress
+     compress css -->
+    <!-- Bootstrap core CSS  -->
+    
+    <!-- Custom fonts for this template -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	  <script defer src="{% static 'devresume/fontawesome/js/all.min.js' %}"></script>
+	
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="{% static 'devresume/css/devresume.css' %}">
+  </head>
+
+  <body id="page-top">
+
+    {% block sideNav %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'resume/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'resume/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'resume/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'resume/js/resume.min.js' %}"></script>
+
+  </body>
+
+</html>
